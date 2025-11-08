@@ -199,8 +199,8 @@ main article section ul li {
     margin-right: 10px;
 }
 
-main article section ul li .bg-blue {
-    background-color: rgba(70, 70, 236, 0.73);
+ .bg-blue {
+    background-color: rgba(15, 15, 244, 0.977);
 }
 
 main article section ul li {
