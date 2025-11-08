@@ -200,7 +200,7 @@ main article section ul li {
 }
 
  .bg-blue {
-    background-color: rgba(15, 15, 244, 0.977);
+    background-color: var(--color-primary);
 }
 
 main article section ul li {
