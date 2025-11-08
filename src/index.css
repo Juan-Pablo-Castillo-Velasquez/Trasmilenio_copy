@@ -1,0 +1,210 @@
+:root {
+    --font-for-title: 'Montserrat-SemiBold', sans-serif;
+    --font-for-title-medium: 'Montserrat-Medium', sans-serif;
+    --font-for-title-regular: 'Montserrat-Regular', sans-serif;
+    --font-for-title-bold: 'Montserrat-Bold', sans-serif;
+    --font-for-content: 'WorkSans-Regular', sans-serif;
+    --font-for-content-semibold: 'WorkSans-SemiBold', sans-serif;
+    --font-for-content-medium: 'WorkSans-Medium', sans-serif;
+    --font-for-content-bold: 'WorkSans-Bold', sans-serif;
+    --font-for-govco-icon: "govco-font";
+    --font-for-govco-iconv2: "govco-fontv2";
+    --color-primary: #3366CC;
+    --color-secondary: #004884;
+    --color-tertiary: #E6EFFD;
+    --color-entidad: #3366CC;
+    --color-entidad-dark: #004884;
+    --color-entidad-light: #E6EFFD;
+    --color-text: #4B4B4B;
+    --color-title: #004884;
+    --color-enlaces: #3366CC;
+    --boton-texto-default: #FFFFFF;
+    --boton-texto-hover: #FFFFFF;
+    --boton-fondo-default: #3366CC;
+    --boton-fondo-hover: #004884;
+    --color-primary-0: rgba(51, 102, 204, 0);
+    --color-primary-1: rgba(51, 102, 204, 0.1);
+    --color-primary-2: rgba(51, 102, 204, 0.2);
+    --color-primary-3: rgba(51, 102, 204, 0.3);
+    --color-primary-4: rgba(51, 102, 204, 0.4);
+    --color-primary-5: rgba(51, 102, 204, 0.5);
+    --color-primary-6: rgba(51, 102, 204, 0.6);
+    --color-primary-7: rgba(51, 102, 204, 0.625);
+    --color-primary-8: rgba(51, 102, 204, 0.8);
+    --color-primary-9: rgba(51, 102, 204, 0.9);
+    --color-primary-10: #36c;
+    --color-secondary-0: rgba(0, 72, 132, 0);
+    --color-secondary-1: rgba(0, 72, 132, 0.1);
+    --color-secondary-2: rgba(0, 72, 132, 0.2);
+    --color-secondary-3: rgba(0, 72, 132, 0.3);
+    --color-secondary-4: rgba(0, 72, 132, 0.4);
+    --color-secondary-5: rgba(0, 72, 132, 0.5);
+    --color-secondary-6: rgba(0, 72, 132, 0.6);
+    --color-secondary-7: rgba(0, 72, 132, 0.7);
+    --color-secondary-8: rgba(0, 72, 132, 0.8);
+    --color-secondary-9: rgba(0, 72, 132, 0.9);
+    --color-secondary-10: #004884;
+    --color-Marine: #3366CC;
+    --color-Blue-dark: #004884;
+    --color-Black: #000000;
+    --color-Tundora: #4b4b4b;
+    --color-Dim-gray: #737373;
+}
+
+body {
+    font-family: var(--font-for-content);
+    color: var(--color-text);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+header div {
+    width: 100%;
+    background-color: var(--color-primary);
+    padding: 5px;
+
+}
+
+header div img {
+    height: 50px;
+    margin: 0px 0px 0px 40px;
+}
+
+header nav {
+    width: 100%;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--font-for-title-medium);
+    font-size: 18px;
+    font: bold;
+    
+
+}
+
+header nav ul b {
+    text-decoration: none;
+    color: rgb(241, 234, 234);
+    font-family: var(--font-for-title-medium);
+    font-size: 22px;
+    font: bold;
+}
+
+header nav ul li a:hover {
+    transition: 0.20s;
+    color: var(--color-tertiary);
+    transform: translateX(10px);
+    padding: 11px 4px 20px 4px;
+
+    background-color: var(--color-primary-7);
+}
+
+header nav ul li a:focus {
+    transition: 0.20s;
+    color: var(--color-tertiary);
+    transform: translateX(10px);
+    padding: 11px 20px 20px 20px;
+    background-color: black;
+}
+
+
+header nav ul li:nth-child(5) a:focus {
+    transition: 0.20s;
+    color: var(--color-tertiary);
+    transform: translateY(10px);
+    background-color: var(--boton-fondo-default);
+    padding: 4px 4px 4px 4px;
+
+
+}
+
+
+header nav ul li:nth-child(5) a {
+    font-weight: bold;
+    color: rgb(173, 171, 185);
+    font-size: 20px;
+}
+
+header nav ul li:nth-child(5) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    display: block;
+}
+
+header nav ul li:nth-child(5) a:hover {
+    transition: 0.20s;
+    color: var(--color-tertiary);
+    transform: translateX(10px);
+    padding: 4px 4px 10px 4px;
+    background-color: var(--color-primary-7);
+}
+
+header .segundo-Nav  {
+ display: flex;
+  justify-content: space-between; 
+  align-items: center;           
+  background-color: #3b65d1;    
+  padding: 10px 20px;
+}
+
+.segundo-Nav .side-icons {
+  display: flex;
+  gap: 15px;                   
+  align-items: center;
+  justify-content: flex-end;     
+}
+main article section ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+main article section ul li {
+    font-family: var(--font-for-title-medium);
+    font-size: 18px;
+    font-weight: bold; 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    margin-right: 10px;
+}
+
+main article section ul li .bg-blue {
+    background-color: rgba(70, 70, 236, 0.73);
+}
+
+main article section ul li {
+    background-color: rgba(255, 0, 0, 0.73);
+}
+
+
