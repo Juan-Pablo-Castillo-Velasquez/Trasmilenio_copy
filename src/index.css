@@ -366,6 +366,8 @@ article {
     position: relative;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     animation: floatBus 5s ease-in-out infinite;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 95%);
+
 }
 
 .forma1 img {
