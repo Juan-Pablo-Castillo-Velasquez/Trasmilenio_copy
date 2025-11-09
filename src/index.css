@@ -280,18 +280,27 @@ article {
     grid-area: article;
     padding: 20px;
     max-width: 1200px;
-    margin: 30px auto;
+    margin: 0px auto;
     width: 100%;
 }
 .presentation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    gap: 50px;
+    margin: 80px auto;
+    padding: 70px 60px;
+    gap: 60px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border-top: 6px solid var(--boton-fondo-default);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.presentation:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
 
 .presentation > div:first-child {
@@ -300,82 +309,119 @@ article {
 }
 
 .presentation h2 {
+    font-family: 'Poppins', sans-serif;
     font-size: 2.4rem;
-    color: #1a237e;
-    margin-bottom: 24px;
-    font-weight: 600;
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 25px;
     line-height: 1.3;
 }
 
+.presentation h2 span {
+    color: #b50715;
+}
+
 .presentation p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
-    line-height: 1.6;
-    color: #424242;
-    margin-bottom: 0;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.presentation .highlight {
+    background: #f7f7f7;
+    padding: 22px;
+    border-left: 4px solid var(--boton-fondo-default);
+    border-radius: 8px;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.presentation .highlight strong {
+    color: var(--boton-fondo-default);
+}
+
+.btn-tm {
+    display: inline-block;
+    background: #c50012;
+    color: #fff;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-tm:hover {
+    background: #a40010;
+    transform: translateY(-2px);
 }
 
 .forma1 {
-    width: 45%;
-    height: 380px;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    flex: 1;
+    height: 360px;
+    border-radius: 18px;
     overflow: hidden;
     position: relative;
-    animation: shapeAnim 20s ease-in-out infinite;
-    background: rgba(245, 245, 245, 0.8);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-@keyframes shapeAnim {
-    0%, 100% { 
-        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; 
-    }
-    25% { 
-        border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%; 
-    }
-    50% { 
-        border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%; 
-    }
-    75% { 
-        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%; 
-    }
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    animation: floatBus 5s ease-in-out infinite;
 }
 
 .forma1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: inherit;
-    transition: transform 0.3s ease;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
 
-.forma1:hover img {
-    transform: scale(1.02);
+@keyframes floatBus {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .presentation {
-        flex-direction: column;
-        padding: 40px 20px;
+        flex-direction: column-reverse;
+        padding: 50px 30px;
         gap: 40px;
         text-align: center;
     }
-    
+
     .presentation > div:first-child {
         max-width: 100%;
     }
-    
+
     .presentation h2 {
-        font-size: 2rem;
+        font-size: 1.9rem;
     }
-    
+
+    .presentation p {
+        font-size: 1rem;
+    }
+
     .forma1 {
-        width: 85%;
+        width: 90%;
         height: 300px;
-        max-width: 400px;
     }
 }
+
+@media (max-width: 480px) {
+    .presentation {
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .presentation h2 {
+        font-size: 1.6rem;
+    }
+
+    .forma1 {
+        height: 240px;
+    }
+}
+
+
 article section{
     margin-bottom: 90px;
 }
