@@ -9,65 +9,65 @@
     --font-for-content-bold: 'WorkSans-Bold', sans-serif;
     --font-for-govco-icon: "govco-font";
     --font-for-govco-iconv2: "govco-fontv2";
-    --color-primary: #3366CC;
-    --color-secondary: #004884;
-    --color-tertiary: #E6EFFD;
-    --color-entidad: #3366CC;
-    --color-entidad-dark: #004884;
-    --color-entidad-light: #E6EFFD;
-    --color-text: #2D3748;
-    --color-text-light: #718096;
-    --color-title: #004884;
-    --color-enlaces: #3366CC;
+    --color-primary: #1976D2;
+    --color-secondary: #0D47A1;
+    --color-tertiary: #E3F2FD;
+    --color-entidad: #1976D2;
+    --color-entidad-dark: #0D47A1;
+    --color-entidad-light: #E3F2FD;
+    --color-text: #212121;
+    --color-text-light: #616161;
+    --color-title: #0D47A1;
+    --color-enlaces: #1976D2;
     --boton-texto-default: #FFFFFF;
     --boton-texto-hover: #FFFFFF;
-    --boton-fondo-default: #3366CC;
-    --boton-fondo-hover: #004884;
-    --color-primary-0: rgba(51, 102, 204, 0);
-    --color-primary-1: rgba(51, 102, 204, 0.1);
-    --color-primary-2: rgba(51, 102, 204, 0.2);
-    --color-primary-3: rgba(51, 102, 204, 0.3);
-    --color-primary-4: rgba(51, 102, 204, 0.4);
-    --color-primary-5: rgba(51, 102, 204, 0.5);
-    --color-primary-6: rgba(51, 102, 204, 0.6);
-    --color-primary-7: rgba(51, 102, 204, 0.625);
-    --color-primary-8: rgba(51, 102, 204, 0.8);
-    --color-primary-9: rgba(51, 102, 204, 0.9);
-    --color-primary-10: #36c;
-    --color-secondary-0: rgba(0, 72, 132, 0);
-    --color-secondary-1: rgba(0, 72, 132, 0.1);
-    --color-secondary-2: rgba(0, 72, 132, 0.2);
-    --color-secondary-3: rgba(0, 72, 132, 0.3);
-    --color-secondary-4: rgba(0, 72, 132, 0.4);
-    --color-secondary-5: rgba(0, 72, 132, 0.5);
-    --color-secondary-6: rgba(0, 72, 132, 0.6);
-    --color-secondary-7: rgba(0, 72, 132, 0.7);
-    --color-secondary-8: rgba(0, 72, 132, 0.8);
-    --color-secondary-9: rgba(0, 72, 132, 0.9);
-    --color-secondary-10: #004884;
-    --color-Marine: #3366CC;
-    --color-Blue-dark: #004884;
+    --boton-fondo-default: #1976D2;
+    --boton-fondo-hover: #0D47A1;
+    --color-primary-0: rgba(25, 118, 210, 0);
+    --color-primary-1: rgba(25, 118, 210, 0.1);
+    --color-primary-2: rgba(25, 118, 210, 0.2);
+    --color-primary-3: rgba(25, 118, 210, 0.3);
+    --color-primary-4: rgba(25, 118, 210, 0.4);
+    --color-primary-5: rgba(25, 118, 210, 0.5);
+    --color-primary-6: rgba(25, 118, 210, 0.6);
+    --color-primary-7: rgba(25, 118, 210, 0.625);
+    --color-primary-8: rgba(25, 118, 210, 0.8);
+    --color-primary-9: rgba(25, 118, 210, 0.9);
+    --color-primary-10: #1976D2;
+    --color-secondary-0: rgba(13, 71, 161, 0);
+    --color-secondary-1: rgba(13, 71, 161, 0.1);
+    --color-secondary-2: rgba(13, 71, 161, 0.2);
+    --color-secondary-3: rgba(13, 71, 161, 0.3);
+    --color-secondary-4: rgba(13, 71, 161, 0.4);
+    --color-secondary-5: rgba(13, 71, 161, 0.5);
+    --color-secondary-6: rgba(13, 71, 161, 0.6);
+    --color-secondary-7: rgba(13, 71, 161, 0.7);
+    --color-secondary-8: rgba(13, 71, 161, 0.8);
+    --color-secondary-9: rgba(13, 71, 161, 0.9);
+    --color-secondary-10: #0D47A1;
+    --color-Marine: #1976D2;
+    --color-Blue-dark: #0D47A1;
     --color-Black: #000000;
-    --color-Tundora: #4b4b4b;
-    --color-Dim-gray: #737373;
-    --color-success: #28A745;
-    --color-warning: #FFC107;
-    --color-danger: #DC3545;
-    --color-info: #17A2B8;
-    --color-gray-100: #F8F9FA;
-    --color-gray-200: #E9ECEF;
-    --color-gray-300: #DEE2E6;
-    --color-gray-600: #6C757D;
-    --color-gray-900: #212529;
-    --color-bg-page: #F7FAFC;
+    --color-Tundora: #424242;
+    --color-Dim-gray: #757575;
+    --color-success: #2E7D32;
+    --color-warning: #F57C00;
+    --color-danger: #C62828;
+    --color-info: #0277BD;
+    --color-gray-100: #FAFAFA;
+    --color-gray-200: #F5F5F5;
+    --color-gray-300: #EEEEEE;
+    --color-gray-600: #757575;
+    --color-gray-900: #212121;
+    --color-bg-page: #FAFAFA;
     --color-white: #FFFFFF;
-    --color-hover: #254FB8;
-    --color-active: #1A3A7D;
-    --border-color: #E2E8F0;
+    --color-hover: #1565C0;
+    --color-active: #0D47A1;
+    --border-color: #E0E0E0;
     --border-radius: 8px;
-    --shadow-sm: 0 2px 4px rgba(0, 72, 132, 0.1);
-    --shadow-md: 0 4px 8px rgba(0, 72, 132, 0.15);
-    --shadow-lg: 0 8px 16px rgba(0, 72, 132, 0.2);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.16);
 }
 
 * {
@@ -139,7 +139,7 @@ header nav ul li a {
 
 header nav ul b {
     text-decoration: none;
-    color: rgb(241, 234, 234);
+    color: #F5F5F5;
     font-family: var(--font-for-title-medium);
     font-size: 22px;
     font-weight: bold;
@@ -163,7 +163,7 @@ header nav ul li a:focus {
 
 header nav ul li:nth-child(5) a {
     font-weight: bold;
-    color: rgb(173, 171, 185);
+    color: #B0BEC5;
     font-size: 20px;
 }
 
@@ -191,7 +191,7 @@ header .segundo-Nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3b65d1;
+    background-color: #1565C0;
     padding: 10px 20px;
     width: 100%;
 }
@@ -201,17 +201,21 @@ header .segundo-Nav {
     gap: 15px;
     align-items: center;
     justify-content: flex-end;
-    
 }
+
 .segundo-Nav .side-icons img {
     width: 50px;
     height: 50px;
     transition: opacity 0.3s ease;
     cursor: pointer;
     pointer-events: all;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
 }
+
 .segundo-Nav .side-icons img:hover {
-    opacity: 0.7;
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 main article section ul {
@@ -259,10 +263,10 @@ article .acordeon_main {
     overflow: hidden;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-lg);
-    background: linear-gradient(135deg, #F7FAFC 0%, #EDF2F7 100%);
+    background: linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 100%);
     padding: 40px;
     position: relative;
-    border: 1px solid var(--color-tertiary);
+    border: 1px solid var(--border-color);
 }
 
 article .acordeon_main .acordeon {
