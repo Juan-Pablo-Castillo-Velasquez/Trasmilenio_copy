@@ -88,6 +88,7 @@ body {
     padding: 2px;
     background-color: var(--color-bg-page);
 }
+
 h2 {
     font-family: var(--font-for-title);
     color: var(--color-gray-900);
@@ -95,8 +96,9 @@ h2 {
     font-weight: bold;
     text-transform: capitalize;
     font-size: 28px;
-    
+
 }
+
 p {
     font-family: var(--font-for-content);
     color: var(--color-text);
@@ -104,7 +106,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 15px;
-align-items: justify;
+    align-items: justify;
 }
 
 main {
@@ -226,13 +228,13 @@ header .segundo-Nav {
     gap: 15px;
     align-items: center;
     justify-content: flex-end;
-       background-color: #1565C0;
+    background-color: #1565C0;
 
 }
 
 .segundo-Nav .side-icons img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     transition: opacity 0.3s ease;
     cursor: pointer;
     pointer-events: all;
@@ -278,17 +280,18 @@ main article section ul li:hover {
 
 article {
     grid-area: article;
-    padding: 20px;
+    padding: 10px;
     max-width: 1200px;
     margin: 0px auto;
     width: 100%;
 }
+
 .presentation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 80px auto;
+    margin: 0px auto;
+    width: 100%;
     padding: 70px 60px;
     gap: 60px;
     background: #ffffff;
@@ -300,23 +303,22 @@ article {
 
 
 
-.presentation > div:first-child {
+.presentation>div:first-child {
     flex: 1;
     max-width: 55%;
 }
 
 .presentation h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-for-title);
     font-size: 2.4rem;
-    color: #111;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 25px;
     line-height: 1.3;
+    color: var(--color-danger);
+    border-bottom: 4px solid rgb(243, 206, 42);
 }
 
-.presentation h2 span {
-    color: #b50715;
-}
+
 
 .presentation p {
     font-family: 'Inter', sans-serif;
@@ -364,20 +366,27 @@ article {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     animation: floatBus 5s ease-in-out infinite;
     background: linear-gradient(135deg, #c50012, #004b8d);
-    border-radius: 0% 100% 38% 62% / 100% 35% 65% 0% ;
+    border-radius: 0% 100% 38% 62% / 100% 35% 65% 0%;
 }
 
 .forma1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.95; 
+    opacity: 0.95;
     transition: transform 0.8s ease, opacity 0.8s ease;
 }
 
 @keyframes floatBus {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 @media (max-width: 900px) {
@@ -388,7 +397,7 @@ article {
         text-align: center;
     }
 
-    .presentation > div:first-child {
+    .presentation>div:first-child {
         max-width: 100%;
     }
 
@@ -422,9 +431,10 @@ article {
 }
 
 
-article section{
+article section {
     margin-bottom: 90px;
 }
+
 article .acordeon_main {
     width: 100%;
     margin: 20px auto;
@@ -464,15 +474,50 @@ article .acordeon_main .acordeon img:hover {
 }
 
 @keyframes xdxd {
-    0%, 10% { transform: translateX(0); }
-    12.5%, 22.5% { transform: translateX(-12.5%); }
-    25%, 35% { transform: translateX(-25%); }
-    37.5%, 47.5% { transform: translateX(-37.5%); }
-    50%, 60% { transform: translateX(-50%); }
-    62.5%, 72.5% { transform: translateX(-62.5%); }
-    75%, 85% { transform: translateX(-75%); }
-    87.5%, 97.5% { transform: translateX(-87.5%); }
-    100% { transform: translateX(0); }
+
+    0%,
+    10% {
+        transform: translateX(0);
+    }
+
+    12.5%,
+    22.5% {
+        transform: translateX(-12.5%);
+    }
+
+    25%,
+    35% {
+        transform: translateX(-25%);
+    }
+
+    37.5%,
+    47.5% {
+        transform: translateX(-37.5%);
+    }
+
+    50%,
+    60% {
+        transform: translateX(-50%);
+    }
+
+    62.5%,
+    72.5% {
+        transform: translateX(-62.5%);
+    }
+
+    75%,
+    85% {
+        transform: translateX(-75%);
+    }
+
+    87.5%,
+    97.5% {
+        transform: translateX(-87.5%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -494,7 +539,7 @@ article .acordeon_main .acordeon img:hover {
     }
 
 
-    
+
     article .acordeon_main {
         padding: 30px 20px;
     }
