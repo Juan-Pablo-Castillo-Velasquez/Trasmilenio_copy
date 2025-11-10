@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TransMilenio - Transporte público de Bogotá | Sitio educativo</title>
+    <meta
+      name="description"
+      content="Clon educativo del sitio TransMilenio realizado con fines de aprendizaje y práctica de desarrollo web. Proyecto académico sin fines comerciales."
+    />
+    <meta
+      name="keywords"
+      content="TransMilenio, transporte Bogotá, buses, movilidad, SITP, TransMiCable, transporte público, Bogotá D.C."
+    />
+    <meta name="author" content="Juan Pablo Castillo Velasquez" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="es" />
 
-  <title>TransMilenio - Transporte público de Bogotá | Sitio educativo</title>
+    <meta
+      property="og:title"
+      content="TransMilenio - Transporte público de Bogotá"
+    />
+    <meta
+      property="og:description"
+      content="Conoce la historia, rutas, noticias y servicios del sistema TransMilenio de Bogotá."
+    />
+    <meta
+      property="og:image"
+      content="https://www.transmilenio.gov.co/info/transmilenio/web/portal/img/favicon.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CO" />
+    <meta property="og:site_name" content="TransMilenio" />
 
-  <meta name="description" content="Clon educativo del sitio TransMilenio realizado con fines de aprendizaje y práctica de desarrollo web. Proyecto académico sin fines comerciales." />
-  <meta name="keywords" content="TransMilenio, transporte Bogotá, buses, movilidad, SITP, TransMiCable, transporte público, Bogotá D.C." />
-  <meta name="author" content="Juan Pablo Castillo Velasquez" />
-  <meta name="robots" content="index, follow" />
-  <meta name="language" content="es" />
+    <link rel="canonical" href="https://tu-sitio-educativo.vercel.app/" />
 
-  <meta property="og:title" content="TransMilenio - Transporte público de Bogotá" />
-  <meta property="og:description" content="Conoce la historia, rutas, noticias y servicios del sistema TransMilenio de Bogotá." />
-  <meta property="og:image" content="https://www.transmilenio.gov.co/info/transmilenio/web/portal/img/favicon.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_CO" />
-  <meta property="og:site_name" content="TransMilenio" />
+    <link
+      rel="preload"
+      href="./index.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./index.css" /></noscript>
 
-  <link rel="icon" type="image/x-icon" href="https://www.transmilenio.gov.co/info/transmilenio/web/portal/img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      media="print"
+      onload="this.media='all'"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.transmilenio.gov.co/info/transmilenio/web/portal/img/favicon.png"
+    />
   </head>
   <body>
     <main>
@@ -32,18 +66,34 @@
         <nav>
           <ul>
             <b>Temas de conversacion:</b>
-            <li><a target="_blank" href="https://www.transmilenio.gov.co/publicaciones/154807/planea-tu-viaje-en-trasmi/">Planea tu viaje en Trasmi</a></li>
-            <li><a  href="#operacionales">Cambio operacionales</a></li>
-
-            <li><a target="_blank" href="https://www.transmilenio.gov.co/publicaciones/151005/canales-de-atencion-de-transmilenio/">Peticiones,Reclamos y sugerencias</a></li>
             <li>
-              <a target="_blank" href="https://www.transmilenio.gov.co/publicaciones/153733/centro-de-emision-radial-de-transmilenio-cer/">Centro de Emisión Radial (CER)</a>
+              <a
+                target="_blank"
+                href="https://www.transmilenio.gov.co/publicaciones/154807/planea-tu-viaje-en-trasmi/"
+                >Planea tu viaje en Trasmi</a
+              >
+            </li>
+            <li><a href="#operacionales">Cambio operacionales</a></li>
+
+            <li>
+              <a
+                target="_blank"
+                href="https://www.transmilenio.gov.co/publicaciones/151005/canales-de-atencion-de-transmilenio/"
+                >Peticiones,Reclamos y sugerencias</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.transmilenio.gov.co/publicaciones/153733/centro-de-emision-radial-de-transmilenio-cer/"
+                >Centro de Emisión Radial (CER)</a
+              >
               <img
                 src="./Assets/microfono.png"
-                width="30px"
-                height="30px"
-                alt=""
-                microfono
+                src="./Assets/microfono.png"
+                width="30"
+                height="30"
+                alt="Icono de micrófono del Centro de Emisión Radial"
               />
             </li>
           </ul>
@@ -51,54 +101,103 @@
         <nav class="segundo-Nav">
           <img
             src="./Assets/trasmicon.png"
-            alt="trasmiapp"
-            width="60px"
-            height="50px"
+            alt="Icono de la aplicación móvil TransMiApp"
+            width="60"
+            height="50"
           />
-
           <div class="side-icons">
             <img
               src="https://cdn-icons-png.flaticon.com/512/8272/8272068.png"
-              alt="icon2"
+              alt="Ícono de ubicación o mapa de TransMilenio"
             />
             <img
               src="https://cdn-icons-png.flaticon.com/512/17/17704.png"
-              alt="icon1"
+              alt="Ícono de contacto o correo de atención al usuario"
             />
             <img
-              src="   https://cdn-icons-png.flaticon.com/512/561/561196.png "
-              alt="icon3"
+              src="https://cdn-icons-png.flaticon.com/512/561/561196.png"
+              alt="Ícono de teléfono o atención ciudadana de TransMilenio"
             />
           </div>
         </nav>
         <nav>
           <ul>
-            <li><a target="_blank" href="https://trasmilenio-copy.vercel.app/">Inicio</a></li>
-            <li><a target="_blank" href="https://www.transmilenio.gov.co/publicaciones/146028/historia-de-transmilenio/">TRANSMILENIO S.A</a></li>
-            <li><a target="_blank" href="https://www.transmilenio.gov.co/publicaciones/153978/transmi-te-lleva-por-bogota/"> Viaje en TransMi</a></li>
             <li>
-              <a target="_blank" href="https://www.transmilenio.gov.co/TransMiCable/"
+              <a target="_blank" href="https://trasmilenio-copy.vercel.app/"
+                >Inicio</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.transmilenio.gov.co/publicaciones/146028/historia-de-transmilenio/"
+                >TRANSMILENIO S.A</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.transmilenio.gov.co/publicaciones/153978/transmi-te-lleva-por-bogota/"
+              >
+                Viaje en TransMi</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.transmilenio.gov.co/TransMiCable/"
                 >TransMiCable</a
               >
             </li>
-            <li><a target="_blank" href="https://www.transmilenio.gov.co/publicaciones/154582/bogota-cuenta-con-un-mapa-turistico-interactivo-para-conocer-la-ciudad/">Descubre Bogotá</a></li>
-            <li><a  href="#Anuncios">Anuncios </a></li>
-            <li><a target="_blank" href="https://www.transmilenio.gov.co/publicaciones/149055/transparencia-y-acceso-a-la-informacion-publica-transmilenio/">Transparencia </a></li>
-            <li><a target="_blank" href="https://www.transmilenio.gov.co/publicaciones/152750/participa/">Participa </a></li>
-            <li><a href="#Atencionciudadana"> Atención y Servicio a la Ciudadanía </a></li>
-            <li><a target="_blank" href="https://negocios.transmilenio.gov.co/"> Negocios </a></li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.transmilenio.gov.co/publicaciones/154582/bogota-cuenta-con-un-mapa-turistico-interactivo-para-conocer-la-ciudad/"
+                >Descubre Bogotá</a
+              >
+            </li>
+            <li><a href="#Anuncios">Anuncios </a></li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.transmilenio.gov.co/publicaciones/149055/transparencia-y-acceso-a-la-informacion-publica-transmilenio/"
+                >Transparencia
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.transmilenio.gov.co/publicaciones/152750/participa/"
+                >Participa
+              </a>
+            </li>
+            <li>
+              <a href="#Atencionciudadana">
+                Atención y Servicio a la Ciudadanía
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://negocios.transmilenio.gov.co/">
+                Negocios
+              </a>
+            </li>
           </ul>
         </nav>
       </header>
       <article>
         <section class="presentation">
           <div>
-            <h1><span>TransMilenio</span> — Moviendo Bogotá con Calidad y Confianza</h1>
+            <h1>
+              <span>TransMilenio</span> — Moviendo Bogotá con Calidad y
+              Confianza
+            </h1>
 
             <p>
-  <strong>TransMilenio</strong> es el sistema de transporte masivo de Bogotá que conecta millones de personas 
-  todos los días. Promovemos una movilidad eficiente, segura y sostenible con calidad y confianza.
-</p>
+              <strong>TransMilenio</strong> es el sistema de transporte masivo
+              de Bogotá que conecta millones de personas todos los días.
+              Promovemos una movilidad eficiente, segura y sostenible con
+              calidad y confianza.
+            </p>
 
             <div class="highlight">
               <p>
@@ -110,7 +209,12 @@
               </p>
             </div>
 
-            <a target="_blank" href="https://www.transmilenio.gov.co/publicaciones/151051/buses-de-transmilenio/" class="btn-tm">Conoce nuestras rutas</a>
+            <a
+              target="_blank"
+              href="https://www.transmilenio.gov.co/publicaciones/151051/buses-de-transmilenio/"
+              class="btn-tm"
+              >Conoce nuestras rutas</a
+            >
           </div>
 
           <div class="forma1">
@@ -119,7 +223,7 @@
             />
           </div>
         </section>
-        <section >
+        <section>
           <ul id="operacionales">
             <li class="bg-blue">¡Atención!</li>
             <li>
@@ -130,18 +234,19 @@
           </ul>
         </section>
 
-        <section id="Anuncios"  class="acordeon_main">
+        <section id="Anuncios" class="acordeon_main">
           <h2>Anuncios</h2>
 
-          <div   class="acordeon">
-            <img src="./Assets/card.jpg" alt="anuncio1" />
-            <img src="./Assets/card2.jpg" alt="anuncio2" />
-            <img src="./Assets/card3.jpg" alt="anuncio3" />
-            <img src="./Assets/card4.jpg" alt="anuncio4" />
-            <img src="./Assets/card5.jpg" alt="anuncio5" />
-            <img src="./Assets/card6.jpg" alt="anuncio6" />
-            <img src="./Assets/card7.jpg" alt="anuncio7" />
-            <img src="./Assets/card6.jpg" alt="anuncio8" />
+          <div class="acordeon">
+<img src="./Assets/card.jpg" alt="Anuncio informativo de TransMilenio sobre cambios operacionales" />
+<img src="./Assets/card2.jpg" alt="Campaña institucional de TransMilenio para usuarios del sistema" />
+<img src="./Assets/card3.jpg" alt="Aviso de TransMilenio sobre rutas y movilidad en Bogotá" />
+<img src="./Assets/card4.jpg" alt="Promoción o anuncio de servicios de TransMilenio" />
+<img src="./Assets/card5.jpg" alt="Información ciudadana sobre el sistema TransMilenio" />
+<img src="./Assets/card6.jpg" alt="Anuncio visual de TransMilenio con mensajes de servicio" />
+<img src="./Assets/card7.jpg" alt="Campaña de concientización de TransMilenio" />
+<img src="./Assets/card6.jpg" alt="Información destacada o recordatorio para los usuarios de TransMilenio" />
+
           </div>
         </section>
       </article>
@@ -183,22 +288,22 @@
               <span class="Reconocimientos">Reconocimientos</span>
               <div>
                 <img
-                  style="margin: 10px"
-                  width="50"
-                  src="https://www.transmilenio.gov.co/info/transmilenio/media/galeria291921.png"
-                  alt="sellos de excelencia de 85"
+                 style="margin: 10px"
+  width="50"
+  src="https://www.transmilenio.gov.co/info/transmilenio/media/galeria291921.png"
+  alt="Sello de Excelencia en Datos Abiertos otorgado a TransMilenio"
                 />
                 <img
-                  style="margin: 10px"
-                  width="50"
-                  src="https://www.transmilenio.gov.co/info/transmilenio/media/galeria291921.png"
-                  alt="sellos de excelencia de 85"
+                 style="margin: 10px"
+  width="50"
+  src="https://www.transmilenio.gov.co/info/transmilenio/media/galeria291921.png"
+  alt="Sello de Excelencia en Datos Abiertos otorgado a TransMilenio"
                 />
                 <img
-                  style="margin: 10px"
-                  width="50"
-                  src="https://www.transmilenio.gov.co/info/transmilenio/media/galeria291921.png"
-                  alt="sellos de excelencia de 85"
+                style="margin: 10px"
+  width="50"
+  src="https://www.transmilenio.gov.co/info/transmilenio/media/galeria291921.png"
+  alt="Sello de Excelencia en Datos Abiertos otorgado a TransMilenio"
                 />
               </div>
               <span class="sellos"> Sellos de excelencia Datos Abiertos</span>
@@ -221,10 +326,10 @@
         </div>
         <div class="redes-sociales">
           <img
-            class="img-responsive"
-            src="https://www.transmilenio.gov.co/info/transmilenio/media/bloque2357.png"
-            id="bloqueImg2357"
-            alt="Imagen"
+           class="img-responsive"
+  src="https://www.transmilenio.gov.co/info/transmilenio/media/bloque2357.png"
+  id="bloqueImg2357"
+  alt="Banner institucional de TransMilenio con información oficial"
           />
           <div>
             <a
