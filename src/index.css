@@ -640,8 +640,8 @@ main footer {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
-    gap: 20px;
-    overflow: hidden;
+    gap: 21px;
+    overflow: scroll;
     border-top:5px solid red;
 
 }
