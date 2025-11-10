@@ -80,9 +80,11 @@
 * {
     box-sizing: border-box;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body {
     font-family: var(--font-for-content);
     color: var(--color-text);
@@ -642,7 +644,7 @@ main footer {
     justify-content: center;
     gap: 21px;
     overflow: scroll;
-    border-top:5px solid red;
+    border-top: 5px solid red;
 
 }
 
@@ -660,12 +662,14 @@ main footer .contacto_footer ul li {
     font-size: 16px;
 
 }
+
 main footer .contacto_footer ul li::before {
-   content: "\25B6";
-   color: var(--color-primary);
-   padding: 2px;
+    content: "\25B6";
+    color: var(--color-primary);
+    padding: 2px;
 
 }
+
 main footer .contacto_footer ul span {
     color: white;
     margin-bottom: 10px;
@@ -701,19 +705,19 @@ main footer .A-un-clic ul li {
     margin-bottom: 45px;
     font-family: var(--font-for-content-medium);
     font-size: 16px;
-    
+
 }
 
 main footer .A-un-clic ul li ::before {
-   content: "\25B6";
-   color: var(--color-primary);
-   padding: 2px;
+    content: "\25B6";
+    color: var(--color-primary);
+    padding: 2px;
 }
 
 main footer .A-un-clic ul span {
     color: white;
     font-size: 25px;
-    
+
     font-weight: bold;
 
 }
@@ -731,51 +735,51 @@ main footer .A-un-clic ul li a:hover {
 
 
 .redes-sociales {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  gap: 20px;
-  padding: 10px;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    text-align: center;
 }
 
 .redes-sociales img {
-  height: 100px;
-  width: 100px;
-  display: block;
-  margin: 0 auto; 
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
 }
 
 .redes-sociales div {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  justify-content: center; 
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
 }
 
 .redes-sociales div a {
-  color: white;
-  background: #d50000;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: 0.3s ease;
+    color: white;
+    background: #d50000;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s ease;
 }
 
 .redes-sociales div a:hover {
-  background: #333;
-  transform: scale(1.1);
+    background: #333;
+    transform: scale(1.1);
 }
 
 .redes-sociales i {
-  font-size: 20px;
+    font-size: 20px;
 }
 
-.derechos{
+.derechos {
     grid-column: 1/-1;
     display: flex;
     flex-direction: column;
@@ -787,10 +791,98 @@ main footer .A-un-clic ul li a:hover {
 }
 
 @media screen and (max-width: 819px) {
-    main footer{
+    main footer {
         display: grid;
         grid-template-areas: footer;
         grid-template-columns: 1fr;
         padding: 20px;
     }
+}
+
+.Herramientas {
+     font-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+    max-width: 1200px;
+    margin: 40px auto;
+    height: auto;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+
+    background-image: 
+        linear-gradient(rgba(139, 0, 0, 0.532), rgba(13, 13, 13, 0.791)), 
+        url("https://cambiocolombia.com/media/photologue/photos/2023-03/whatsapp_image_2023-03-27_at_2.28.11_pm.jpeg");
+
+    background-repeat: no-repeat;
+    background-size: cover;      
+    background-position: center;  
+    background-attachment: fixed; 
+    color: #fff;
+}
+
+.Herramientas h2 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 35px;
+    font-size: 30px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.Herramientas ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Herramientas li {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Herramientas li:hover {
+    background-color: #ffffff;
+    border-color: #b60c0c;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(182, 12, 12, 0.25);
+}
+
+.icon {
+    font-size: 50px;
+    color: #b60c0c;
+    margin-bottom: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Herramientas li:hover .icon {
+    color: #8b0000;
+    transform: scale(1.1);
+}
+
+.Herramientas strong {
+    display: block;
+    font-size: 18px;
+    color: #111;
+    font-weight: 600;
+    margin-bottom: 8px;
+    border-bottom: 4px rgb(255, 188, 19) solid;
+}
+
+.Herramientas p {
+    margin: 0;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.4;
 }
